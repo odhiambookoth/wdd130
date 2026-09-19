@@ -1,0 +1,25 @@
+:root {
+    --primary-colour: #055a05;
+    --secondary-colour: #f4a261;
+    --accent1-colour: #264653;
+    --accent2-colour: #e9c46a;
+    --heading-font: "Times New Roman", Times, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    colour: var(--accent1-colour);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
