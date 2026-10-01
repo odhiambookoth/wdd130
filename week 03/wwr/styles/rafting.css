@@ -1,25 +1,69 @@
-:root {
-    --primary-colour: #055a05;
-    --secondary-colour: #f4a261;
-    --accent1-colour: #264653;
-    --accent2-colour: #e9c46a;
-    --heading-font: "Times New Roman", Times, serif;
-    --body-font: Arial, Helvetica, sans-serif;
+/* W04 Required Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; }
+
+header {
+    display: grid; /* Requirement #4 - CSS Grid */
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: #0d3b66;
+    padding: 10px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header img { width: 100px; }
+
+nav {
+    display: flex; /* Requirement #5 - CSS Flex */
+    justify-content: space-around;
 }
 
-body {
-    font-family: var(--body-font);
-    colour: var(--accent1-colour);
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
 }
 
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
+/* Hero */
+.hero { position: relative; }
+.hero img { width: 100%; height: auto; }
+.hero h1 { position: absolute; top: 30px; width: 100%; text-align: center; color: white; background: rgba(0,0,0,0.5); }
+.hero article { position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(255,255,255,0.8); padding: 10px; }
+.hero article img { width: 150px; float: right; }
 
+/* History Section - Requirement #7 */
+.history h2 { text-align: center; margin: 20px 0; }
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+.history-grid img { width: 100%; }
+
+/* Adventures Section - Requirement #8 */
+.adventures h2 { text-align: center; margin: 20px 0; }
+.adventure-gallery {
+    display: flex; /* you can also use grid with 5 columns */
+    justify-content: space-between;
+    padding: 20px;
+}
+.adventure-gallery figure { text-align: center; }
+.adventure-gallery img { width: 120px; height: 90px; }
+
+/* Footer - Requirement #9 */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0d3b66;
+    color: white;
+    padding: 15px;
+}
+.sociallinks {
+    display: flex;
+    gap: 10px;
+}
+.sociallinks img { width: 30px; }
