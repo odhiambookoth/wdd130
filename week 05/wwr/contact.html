@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - White Water Rafting Company</title>
+    <meta name="description" content="Contact White Water Rafting Company for inquiries, reservations, and suggestions. Find our address, phone, email and location map.">
+    <meta name="author" content="Odhiambo Koth">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Site Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.430749045461!2d-111.65860202346758!3d40.43159605460942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874db93b14b7c6cb%3A0x2c7b3c1b2b2b2b2b!2sProvo%20River!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Placeholder">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Placeholder">
+
+                <fieldset>
+                    <legend>Message Purpose</legend>
+                    <label><input type="radio" name="purpose" value="general" id="general" checked> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation" id="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion" id="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type here"></textarea>
+
+                <label><input type="checkbox" name="subscribe" id="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </div>
+
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Happy Employee - Tour Guide">
+                    <figcaption>John Doe - Lead Rafting Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Happy Employee - Reservation Manager">
+                    <figcaption>Jane Smith - Reservation Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Happy Employee - Customer Support">
+                    <figcaption>Mike Johnson - Customer Support</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2026 | White Water Rafting Company | Odhiambo Koth</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+</html>
